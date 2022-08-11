@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom List</title>
+
+
+    <script type="text/javascript" src="https://rally1.rallydev.com/apps/2.1/sdk-debug.js"></script>
+
+    <script type="text/javascript">
+        Rally.loadScripts(
+                [
+                      "RallyQueryField.js",
+                      "FilterFieldFactory.js",
+                      "SharedViewControl.js",
+                      "Settings.js",
+                      "CustomListApp.js",
+                ],
+        function() {
+            Rally.launchApp('Rally.apps.customlist.CustomListApp', {
+                name:"Custom List"
+            });
+        }, true);
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>
